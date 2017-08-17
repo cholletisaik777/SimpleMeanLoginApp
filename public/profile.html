@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    
+     <div class="col-md-6">
+      <button class="pull-right btn btn-danger" ng-click="auth.logout()">Logout</button>
+      <h1 class="form-signin-heading">Your profile</h1>
+
+      <form  class="form-horizontal">
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Full name</label>
+          <p class="form-control-static">{{ auth.user.name }}</p>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Username</label>
+          <p class="form-control-static">{{ auth.user.username }}</p>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+</div>
